@@ -49,7 +49,7 @@ class LevelSelection(Config):
         """
         py.init()
         self.initial_time = int(py.time.get_ticks()/1000)
-        self.menu_music = self.set_music(r"assets\Musica\el_señor_de_la_noche.mp3",-1,0.1)
+        self.menu_music = self.set_music(r"assets\Musica\el_señor_de_la_noche.mp3",-1,0.2)
         while self.running:
             self.clock.tick(self.FPS)
             self.current_time = int(py.time.get_ticks()/1000)
@@ -83,7 +83,7 @@ class LevelSelection(Config):
                 self.buttons_appearance = False
                 self.score_list_appearance = False
                 self.stop_music(self.menu_music)
-                self.levels_music = self.set_music(r"assets\Musica\musica_fondo.mp3",-1,0.1)
+                self.levels_music = self.set_music(r"assets\Musica\powerful-victory-trailer-103656.mp3",-1,0.3)
                 self.user_name = self.text_box.get_text()
             else:
                 self.set_music(r"assets\Musica\wrong.mp3")
@@ -94,7 +94,7 @@ class LevelSelection(Config):
                 self.buttons_appearance = False
                 self.score_list_appearance = False
                 self.stop_music(self.menu_music)
-                self.levels_music = self.set_music(r"assets\Musica\musica_fondo.mp3",-1,0.1)
+                self.levels_music = self.set_music(r"assets\Musica\powerful-victory-trailer-103656.mp3",-1,0.3)
                 self.user_name = self.text_box.get_text()
             else:
                 self.set_music(r"assets\Musica\wrong.mp3")
@@ -105,7 +105,7 @@ class LevelSelection(Config):
                 self.buttons_appearance = False
                 self.score_list_appearance = False
                 self.stop_music(self.menu_music)
-                self.levels_music = self.set_music(r"assets\Musica\musica_fondo.mp3",-1,0.1)
+                self.levels_music = self.set_music(r"assets\Musica\powerful-victory-trailer-103656.mp3",-1,0.3)
                 self.user_name = self.text_box.get_text()
             else:
                 self.set_music(r"assets\Musica\wrong.mp3",volume=0.3)
@@ -132,7 +132,7 @@ class LevelSelection(Config):
                             self.unlock_second_level = True
                         self.buttons_appearance = True
                         self.stop_music(self.levels_music)
-                        self.menu_music = self.set_music(r"assets\Musica\el_señor_de_la_noche.mp3",-1,0.1)
+                        self.menu_music = self.set_music(r"assets\Musica\el_señor_de_la_noche.mp3",-1,0.2)
                         self.level_selected = ""
                     elif self.first_level.next_level:
                         self.unlock_second_level = True
@@ -152,7 +152,7 @@ class LevelSelection(Config):
                         self.buttons_appearance = True
                         self.level_selected = ""
                         self.stop_music(self.levels_music)
-                        self.menu_music = self.set_music(r"assets\Musica\el_señor_de_la_noche.mp3",-1,0.1)
+                        self.menu_music = self.set_music(r"assets\Musica\el_señor_de_la_noche.mp3",-1,0.2)
                     elif self.second_level.next_level:
                         self.unlock_third_level = True
                         self.level_selected = "third"
@@ -169,7 +169,7 @@ class LevelSelection(Config):
                         self.buttons_appearance = True
                         self.level_selected = ""
                         self.stop_music(self.levels_music)
-                        self.menu_music = self.set_music(r"assets\Musica\el_señor_de_la_noche.mp3",-1,0.1)
+                        self.menu_music = self.set_music(r"assets\Musica\el_señor_de_la_noche.mp3",-1,0.2)
                     if self.third_level.try_again:
                         self.set_third_level()
             case "":
